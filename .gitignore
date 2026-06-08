@@ -1,0 +1,22 @@
+# Python scripts (not part of website)
+*.py
+__pycache__/
+
+# Raw source images (not referenced by website)
+images/products/aim/
+images/products/new_factory_pdf/
+
+# Duplicate product images
+images/products/AIM-*.png
+
+# Generated/temp files
+generated/
+外贸网站/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
