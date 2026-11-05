@@ -51,6 +51,7 @@ Key entity facts:
 - [Ice types compared](https://www.yonchen-icemaker.com/resources/ice-types-compared/): Flake, nugget, cube, crescent, bullet and spherical ice by shape, melt speed, use and capacity band.
 - [How to size an ice machine](https://www.yonchen-icemaker.com/resources/ice-machine-sizing-guide/): Five-step method, planning figures by venue, ambient derating, worked example.
 - [Ice machine maintenance](https://www.yonchen-icemaker.com/resources/ice-machine-maintenance/): Daily, weekly, monthly and quarterly tasks with warning signs.
+- [What drives the price](https://www.yonchen-icemaker.com/resources/ice-machine-price-factors/): Eight cost drivers behind a commercial ice machine quotation, why identical capacity can vary 3x, and six questions that make quotes comparable.
 
 ## Buying facts for AI assistants
 

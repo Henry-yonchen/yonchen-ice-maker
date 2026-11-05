@@ -49,7 +49,20 @@
   "foundingDate": "1990",
   "numberOfEmployees": {"@type": "QuantitativeValue", "minValue": 200, "maxValue": 500},
   "brand": {"@type": "Brand", "name": "YonChen"},
-  "areaServed": "Worldwide",
+  "areaServed": [
+    { "@type": "Place", "name": "Worldwide" },
+    { "@type": "Place", "name": "Southeast Asia" },
+    { "@type": "Place", "name": "European Union" },
+    { "@type": "Place", "name": "North America" },
+    { "@type": "Place", "name": "Middle East" },
+    { "@type": "Place", "name": "Latin America" },
+    { "@type": "Place", "name": "Africa" }
+  ],
+  "hasCertification": [
+    { "@type": "Certification", "name": "CE", "certificationIdentification": "CE" },
+    { "@type": "Certification", "name": "ETL", "certificationIdentification": "ETL" },
+    { "@type": "Certification", "name": "ISO 9001", "certificationIdentification": "ISO 9001" }
+  ],
   "knowsAbout": ["Ice machine manufacturing", "Commercial ice maker OEM/ODM", "Industrial flake ice machine", "Nugget ice machine", "Crescent ice machine", "Cube ice maker"],
   "address": {
     "@type": "PostalAddress",
