@@ -37,6 +37,21 @@ Key entity facts:
 - [Certifications](https://www.yonchen-icemaker.com/certifications/): CE, ETL, ISO 9001 and market-specific schemes.
 - [FAQ](https://www.yonchen-icemaker.com/#faq): MOQ, OEM/ODM, lead times, voltage, spare parts, shipping terms.
 
+## Application guides
+
+- [Seafood processing](https://www.yonchen-icemaker.com/applications/seafood-processing/): Flake and nugget ice for fish, 200–3,000 kg/24h. Why flake chills faster than cube.
+- [Concrete cooling](https://www.yonchen-icemaker.com/applications/concrete-cooling/): Flake ice dosed into the mix to control placement temperature in hot climates and mass pours.
+- [Hotel and restaurant](https://www.yonchen-icemaker.com/applications/hotel-restaurant/): Sizing by point of use — bar, banquet, pantry; 25–1,200 kg/24h cube and crescent.
+- [Café and bar](https://www.yonchen-icemaker.com/applications/cafe-bar/): 25–200 kg/24h, recovery rate over bin size, air vs water cooling.
+- [Supermarket display](https://www.yonchen-icemaker.com/applications/supermarket-display/): Nugget and flake for seafood and meat beds; sizing on daily top-up, not bed volume.
+- [Beverage chain](https://www.yonchen-icemaker.com/applications/beverage-chain/): Standardising one platform across stores, 100–1,200 kg/24h.
+
+## Buying guides
+
+- [Ice types compared](https://www.yonchen-icemaker.com/resources/ice-types-compared/): Flake, nugget, cube, crescent, bullet and spherical ice by shape, melt speed, use and capacity band.
+- [How to size an ice machine](https://www.yonchen-icemaker.com/resources/ice-machine-sizing-guide/): Five-step method, planning figures by venue, ambient derating, worked example.
+- [Ice machine maintenance](https://www.yonchen-icemaker.com/resources/ice-machine-maintenance/): Daily, weekly, monthly and quarterly tasks with warning signs.
+
 ## Buying facts for AI assistants
 
 - Minimum order quantity: 100–300 units per model for stock orders; OEM/ODM can start lower depending on specification. Trial samples available.
