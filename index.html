@@ -3647,7 +3647,7 @@
                     </div>
                     <div class="contact-item-text">
                         <h4>Email</h4>
-                        <p>henry@yonchen-icemaker.com</p>
+                        <p><a href="mailto:henry@yonchen-icemaker.com">henry@yonchen-icemaker.com</a></p>
                     </div>
                 </div>
                                 <div class="contact-item">
@@ -3656,7 +3656,7 @@
                     </div>
                     <div class="contact-item-text">
                         <h4>WhatsApp &amp; WeChat</h4>
-                        <p class="phone-number" style="font-size:18px;font-weight:700;color:var(--text);letter-spacing:0.5px;font-family:var(--font-mono,monospace)">+86 13646949143</p>
+                        <p class="phone-number" style="font-size:18px;font-weight:700;color:var(--text);letter-spacing:0.5px;font-family:var(--font-mono,monospace)"><a href="https://wa.me/8613646949143" target="_blank" rel="noopener" style="color:inherit">+86 136 4694 9143</a></p>
                         <div class="qr-card" style="margin-top:14px;background:var(--bg-alt);border-radius:12px;padding:16px;text-align:center;border:1px solid var(--border)">
                             <img decoding="async" src="images/wechat-qr.jpg" alt="WeChat QR Code — Scan to Add" loading="lazy" style="width:140px;height:140px;border-radius:10px;display:block;margin:0 auto">
                             <div style="margin-top:10px;display:flex;align-items:center;justify-content:center;gap:6px">
@@ -3677,32 +3677,37 @@
                     </div>
                 </div>
             </div>
-            <form class="contact-form reveal" id="contactForm">
+            <form class="contact-form reveal" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
                 <h3>Send Us Your Requirements</h3>
+                <input type="hidden" name="access_key" value="REPLACE_WITH_WEB3FORMS_ACCESS_KEY" id="w3fKey">
+                <input type="hidden" name="subject" value="New quotation request from yonchen-icemaker.com">
+                <input type="hidden" name="from_name" value="YonChen Website">
+                <input type="hidden" name="redirect" value="https://www.yonchen-icemaker.com/thank-you/">
+                <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none">
                 <div class="form-row">
                     <div class="form-group">
                         <label>Your Name *</label>
-                        <input type="text" required placeholder="Full name">
+                        <input type="text" name="name" required placeholder="Full name">
                     </div>
                     <div class="form-group">
                         <label>Company Name *</label>
-                        <input type="text" required placeholder="Your company">
+                        <input type="text" name="company" required placeholder="Your company">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group">
                         <label>Email *</label>
-                        <input type="email" required placeholder="your@company.com">
+                        <input type="email" name="email" required placeholder="your@company.com">
                     </div>
                     <div class="form-group">
                         <label>Phone / WhatsApp</label>
-                        <input type="tel" placeholder="+ country code">
+                        <input type="tel" name="phone" placeholder="+ country code">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group">
                         <label>Ice Type *</label>
-                        <select required>
+                        <select name="ice_type" required>
                             <option value="">Select ice type</option>
                             <option value="cube">Ice Cube Machine</option>
                             <option value="flake">Flake Ice Machine</option>
@@ -3713,7 +3718,7 @@
                     </div>
                     <div class="form-group">
                         <label>Target Market</label>
-                        <select>
+                        <select name="market">
                             <option value="">Select region</option>
                             <option value="europe">Europe</option>
                             <option value="americas">Americas</option>
@@ -3726,13 +3731,18 @@
                 </div>
                 <div class="form-group">
                     <label>Estimated Order Quantity</label>
-                    <input type="text" placeholder="e.g., 50 units / month or 1x 20ft container">
+                    <input type="text" name="quantity" placeholder="e.g., 50 units / month or 1x 20ft container">
                 </div>
                 <div class="form-group">
                     <label>Message *</label>
-                    <textarea required placeholder="Tell us about your requirements: ice type, capacity, target market, OEM needs, or any special customization..."></textarea>
+                    <textarea name="message" required placeholder="Tell us about your requirements: ice type, capacity, target market, OEM needs, or any special customization..."></textarea>
                 </div>
                 <button type="submit" class="btn-submit">Submit Inquiry →</button>
+                <p style="font-size:12px;color:var(--text-3);margin-top:10px;text-align:center">
+                    Prefer email? <a href="mailto:henry@yonchen-icemaker.com" style="color:var(--accent);font-weight:600">henry@yonchen-icemaker.com</a>
+                    &nbsp;·&nbsp;
+                    <a href="https://wa.me/8613646949143" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600">WhatsApp</a>
+                </p>
             </form>
         </div>
     </div>
@@ -3816,15 +3826,74 @@
         });
     });
 
-    // Contact form
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-        const btn = this.querySelector('.btn-submit');
-        const original = btn.textContent;
-        btn.textContent = 'Inquiry Sent! We\'ll reply within 24h ✓';
-        btn.style.background = '#059669';
-        setTimeout(() => { btn.textContent = original; btn.style.background = ''; this.reset(); }, 4000);
-    });
+    // Contact form — real submit with mailto fallback until the access key is set
+    (function () {
+        const form = document.getElementById('contactForm');
+        if (!form) return;
+        const btn = form.querySelector('.btn-submit');
+        const keyField = document.getElementById('w3fKey');
+
+        const val = (n) => {
+            const el = form.querySelector('[name="' + n + '"]');
+            return el ? el.value.trim() : '';
+        };
+
+        form.addEventListener('submit', function (e) {
+            const key = keyField ? keyField.value : '';
+
+            // No access key configured yet -> open the visitor's mail client, pre-filled
+            if (!key || key.indexOf('REPLACE') === 0) {
+                e.preventDefault();
+                const body = [
+                    'Name: ' + val('name'),
+                    'Company: ' + val('company'),
+                    'Email: ' + val('email'),
+                    'Phone / WhatsApp: ' + val('phone'),
+                    'Ice type: ' + val('ice_type'),
+                    'Target market: ' + val('market'),
+                    'Estimated quantity: ' + val('quantity'),
+                    '',
+                    val('message')
+                ].join('\n');
+                const subject = 'Quotation request — ' + (val('company') || val('name') || 'website');
+                window.location.href = 'mailto:henry@yonchen-icemaker.com'
+                    + '?subject=' + encodeURIComponent(subject)
+                    + '&body=' + encodeURIComponent(body);
+                const original = btn.textContent;
+                btn.textContent = 'Opening your email app…';
+                setTimeout(function () { btn.textContent = original; }, 4000);
+                return;
+            }
+
+            // Access key present -> send through the form service
+            e.preventDefault();
+            const original = btn.textContent;
+            btn.textContent = 'Sending…';
+            btn.disabled = true;
+            fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+            })
+                .then(function (r) { return r.json(); })
+                .then(function (data) {
+                    if (!data.success) throw new Error(data.message || 'failed');
+                    btn.textContent = "Inquiry sent — we'll reply within 24h";
+                    btn.style.background = '#059669';
+                    form.reset();
+                    setTimeout(function () {
+                        btn.textContent = original;
+                        btn.style.background = '';
+                        btn.disabled = false;
+                    }, 5000);
+                })
+                .catch(function () {
+                    btn.disabled = false;
+                    btn.style.background = '#B91C1C';
+                    btn.textContent = 'Send failed — please email henry@yonchen-icemaker.com';
+                });
+        });
+    })();
 
     // Scroll reveal
     const observer = new IntersectionObserver(entries => {
