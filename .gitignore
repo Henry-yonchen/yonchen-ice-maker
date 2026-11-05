@@ -27,3 +27,5 @@ _series.json
 *.bak
 *.bak2
 *.bak_seo
+_models.json
+_apps.json

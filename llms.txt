@@ -31,6 +31,8 @@ Key entity facts:
 - [Commercial ice makers (SIM)](https://www.yonchen-icemaker.com/products/commercial-ice-maker/): 9 models, 25–100 kg/24h, self-contained cube machines.
 - [Portable ice makers (PIM)](https://www.yonchen-icemaker.com/products/portable-ice-maker/): 10 models, 12–15 kg/24h, entry-level countertop.
 - [AI smart ice makers (AIM)](https://www.yonchen-icemaker.com/products/ai-smart-ice-maker/): 10 models, 12–60 kg/24h, touch and AI voice control.
+- [CIM-006 cube ice maker](https://www.yonchen-icemaker.com/products/cube-ice-machine/cim-006/): 80 kg/24h, 15 kg bin, 380 W, 480x450x780 mm. Split-type commercial cube machine for cafés and small restaurant kitchens.
+- [FIM-007 industrial flake ice machine](https://www.yonchen-icemaker.com/products/flake-ice-machine/fim-007/): 3,000 kg/24h, 600 kg bin, 10,170 W, 1600x1380x2600 mm. 304 stainless evaporator for seafood plants and concrete cooling.
 - [OEM / ODM](https://www.yonchen-icemaker.com/oem-odm/): Customisation scope, MOQ, lead times, certification support, SKD kits.
 - [About](https://www.yonchen-icemaker.com/about/): Company identity, location, scale and buying process.
 - [Factory](https://www.yonchen-icemaker.com/factory/): 40,000 sqm site in Cixi, output, shipping ports.

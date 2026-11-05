@@ -38,6 +38,18 @@
         <priority>0.9</priority>
     </url>
     <url>
+        <loc>https://www.yonchen-icemaker.com/products/cube-ice-machine/cim-006/</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.yonchen-icemaker.com/products/flake-ice-machine/fim-007/</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://www.yonchen-icemaker.com/products/ai-smart-ice-maker/</loc>
         <lastmod>2026-11-05</lastmod>
         <changefreq>weekly</changefreq>
