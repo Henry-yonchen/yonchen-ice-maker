@@ -20,3 +20,10 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
+
+# Build helpers / local backups
+_products.json
+_series.json
+*.bak
+*.bak2
+*.bak_seo

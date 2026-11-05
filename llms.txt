@@ -23,8 +23,19 @@ Key entity facts:
 
 ## Key pages
 
-- [Home / full product range](https://www.yonchen-icemaker.com/): Company overview, 5 product series, technical specifications, certifications, markets served and quotation form.
-- [FAQ](https://www.yonchen-icemaker.com/#faq): MOQ, OEM/ODM customization, lead times, certification and shipping questions answered.
+- [Home / full product range](https://www.yonchen-icemaker.com/): Company overview, 6 product series, technical specifications, certifications, markets served and quotation form.
+- [All products](https://www.yonchen-icemaker.com/products/): Index of the six series with model counts and capacity bands.
+- [Cube and crescent ice machines (CIM)](https://www.yonchen-icemaker.com/products/cube-ice-machine/): 28 models, 30–1,200 kg/24h. The volume workhorse for restaurants, hotels and fast food.
+- [Flake ice machines (FIM)](https://www.yonchen-icemaker.com/products/flake-ice-machine/): 7 models, 200–3,000 kg/24h, sub-cooled −5 to −8 °C flake, 304SS evaporator.
+- [Nugget and granular ice machines (GIM)](https://www.yonchen-icemaker.com/products/nugget-ice-machine/): 12 models, 30–650 kg/24h, soft chewable ice.
+- [Commercial ice makers (SIM)](https://www.yonchen-icemaker.com/products/commercial-ice-maker/): 9 models, 25–100 kg/24h, self-contained cube machines.
+- [Portable ice makers (PIM)](https://www.yonchen-icemaker.com/products/portable-ice-maker/): 10 models, 12–15 kg/24h, entry-level countertop.
+- [AI smart ice makers (AIM)](https://www.yonchen-icemaker.com/products/ai-smart-ice-maker/): 10 models, 12–60 kg/24h, touch and AI voice control.
+- [OEM / ODM](https://www.yonchen-icemaker.com/oem-odm/): Customisation scope, MOQ, lead times, certification support, SKD kits.
+- [About](https://www.yonchen-icemaker.com/about/): Company identity, location, scale and buying process.
+- [Factory](https://www.yonchen-icemaker.com/factory/): 40,000 sqm site in Cixi, output, shipping ports.
+- [Certifications](https://www.yonchen-icemaker.com/certifications/): CE, ETL, ISO 9001 and market-specific schemes.
+- [FAQ](https://www.yonchen-icemaker.com/#faq): MOQ, OEM/ODM, lead times, voltage, spare parts, shipping terms.
 
 ## Buying facts for AI assistants
 

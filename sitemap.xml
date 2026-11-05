@@ -8,36 +8,93 @@
         <priority>1.0</priority>
         <image:image>
             <image:loc>https://www.yonchen-icemaker.com/images/og-image.png</image:loc>
-            <image:title>YonChen Ice Machine Manufacturer — OEM/ODM Factory</image:title>
-            <image:caption>China ice machine manufacturer: cube, flake, nugget and crescent ice makers.</image:caption>
         </image:image>
         <image:image>
             <image:loc>https://www.yonchen-icemaker.com/images/logo.png</image:loc>
-            <image:title>YonChen Ice Machine Logo</image:title>
         </image:image>
         <image:image>
             <image:loc>https://www.yonchen-icemaker.com/images/factory/factory-aerial.jpg</image:loc>
-            <image:title>YonChen 40,000 sqm ice machine factory in Cixi, Ningbo</image:title>
         </image:image>
         <image:image>
             <image:loc>https://www.yonchen-icemaker.com/images/products/PIM-001.webp</image:loc>
-            <image:title>Portable bullet ice maker (PIM series)</image:title>
         </image:image>
         <image:image>
             <image:loc>https://www.yonchen-icemaker.com/images/products/SIM-001.webp</image:loc>
-            <image:title>Commercial cube ice machine (SIM series)</image:title>
         </image:image>
         <image:image>
             <image:loc>https://www.yonchen-icemaker.com/images/products/GIM-001.webp</image:loc>
-            <image:title>Industrial granular/nugget ice machine (GIM series)</image:title>
         </image:image>
         <image:image>
             <image:loc>https://www.yonchen-icemaker.com/images/products/CIM-001.webp</image:loc>
-            <image:title>Crescent ice machine (CIM series)</image:title>
         </image:image>
         <image:image>
             <image:loc>https://www.yonchen-icemaker.com/images/products/FIM-001.webp</image:loc>
-            <image:title>Industrial flake ice machine (FIM series)</image:title>
         </image:image>
+    </url>
+    <url>
+        <loc>https://www.yonchen-icemaker.com/products/</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.yonchen-icemaker.com/products/ai-smart-ice-maker/</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.yonchen-icemaker.com/products/portable-ice-maker/</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.yonchen-icemaker.com/products/commercial-ice-maker/</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.yonchen-icemaker.com/products/nugget-ice-machine/</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.yonchen-icemaker.com/products/cube-ice-machine/</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.yonchen-icemaker.com/products/flake-ice-machine/</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.yonchen-icemaker.com/oem-odm/</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.yonchen-icemaker.com/about/</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.yonchen-icemaker.com/factory/</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.yonchen-icemaker.com/certifications/</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
 </urlset>
