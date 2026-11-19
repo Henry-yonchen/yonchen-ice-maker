@@ -63,6 +63,14 @@
  }
 }
 </script>
+<!-- ga4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XHFCKDSCD2"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-XHFCKDSCD2', { 'anonymize_ip': true, 'send_page_view': true });
+</script>
 </head>
 <body>
 <header class="header" id="header">
@@ -211,6 +219,54 @@ document.getElementById('mobileMenuBtn')?.addEventListener('click',function(){
 window.addEventListener('scroll',function(){
   document.getElementById('header').classList.toggle('scrolled',window.scrollY>10);
 });
+</script>
+
+<script>
+/* ga4 events */
+(function(){
+  function send(n, p){ try{ if (window.gtag) gtag('event', n, p || {}); }catch(e){} }
+
+  var f = document.getElementById('contactForm');
+  if (f) {
+    var btn = f.querySelector('.btn-submit');
+    if (btn) {
+      new MutationObserver(function(){
+        if (btn.textContent.indexOf('Inquiry sent') === 0) {
+          send('generate_lead', {
+            form_id: 'contactForm',
+            ice_type: (f.querySelector('[name=ice_type]')||{}).value || '',
+            market: (f.querySelector('[name=market]')||{}).value || ''
+          });
+        }
+      }).observe(btn, { childList: true, characterData: true, subtree: true });
+    }
+  }
+
+  document.addEventListener('click', function(e){
+    var a = e.target && e.target.closest ? e.target.closest('a') : null;
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    if (href.indexOf('wa.me') > -1) {
+      send('whatsapp_click', { page_path: location.pathname,
+        placement: a.id === 'waFloat' ? 'float_button' : 'inline_link' });
+    } else if (href.indexOf('mailto:') === 0) {
+      send('email_click', { page_path: location.pathname });
+    } else if (a.classList.contains('btn-gold') || a.classList.contains('card-btn') || a.classList.contains('nav-cta')) {
+      send('quote_cta_click', { page_path: location.pathname,
+        label: (a.textContent || '').trim().slice(0, 40) });
+    }
+  }, true);
+
+  (function(){
+    var p = location.pathname, t = 'other';
+    if (p === '/') t = 'home';
+    else if (p.indexOf('/products/') === 0) t = p.split('/').length > 4 ? 'model' : (p === '/products/' ? 'hub' : 'series');
+    else if (p.indexOf('/applications/') === 0) t = 'application';
+    else if (p.indexOf('/resources/') === 0) t = 'resource';
+    else if (p.indexOf('/oem-odm/') === 0) t = 'oem';
+    send('page_template', { template: t, page_path: p });
+  })();
+})();
 </script>
 </body>
 </html>

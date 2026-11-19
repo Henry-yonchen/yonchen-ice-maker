@@ -29,3 +29,10 @@ _series.json
 *.bak_seo
 _models.json
 _apps.json
+
+# 产品目录大文件（85MB x2，不进仓库）
+制冰机产品目录_*.xlsx
+*.bak*
+# 未上站的原始产品图
+images/products/DIM-*.png
+images/products/aim/
