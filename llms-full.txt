@@ -39,11 +39,11 @@ Capacity is quoted as kg of ice per 24 hours. Dimensions are in millimetres (W×
 
 | Model | Description | Ice type | Output | Bin | Power | Dimensions | Page |
 |---|---|---|---|---|---|---|---|
-| AIM-010 | Spherical Ice Maker (Business Touchscreen Model) | Spherical Ice | - | 0.5 kg | 120 W | 307*237*383 mm |  |
+| AIM-010 | Spherical Ice Maker (Business Touchscreen Model) | Spherical Ice | - | 0.5 kg | 120 W | 307*237*383 mm | https://www.yonchen-icemaker.com/products/ai-smart-ice-maker/aim-010/ |
 | AIM-001 | Bullet Ice Maker (Touchscreen Model) | Bullet Ice | 12 kg/24h | 0.5 kg | 95 W | 235*305*302 mm |  |
 | AIM-002 | Bullet Ice Maker (Dual Knob Model) | Bullet Ice | 12 kg/24h | 0.5 kg | 95 W | 235*305*295 mm |  |
 | AIM-003 | Crescent Ice Maker (AI Voice Version) | Crescent | 12 kg/24h | 1.2 kg | 120 W | 350*240*418 mm | https://www.yonchen-icemaker.com/products/ai-smart-ice-maker/aim-003/ |
-| AIM-004 | Multifunctional Ice Maker (Touchscreen 3-in-1) | Cube / Slush / Iced Water | 15 kg/24h | 1 kg | 120 W | 460*300*470 mm |  |
+| AIM-004 | Multifunctional Ice Maker (Touchscreen 3-in-1) | Cube / Slush / Iced Water | 15 kg/24h | 1 kg | 120 W | 460*300*470 mm | https://www.yonchen-icemaker.com/products/ai-smart-ice-maker/aim-004/ |
 | AIM-005 | Multi-function Ice Maker (Digital Touchscreen 3-in-1) | Cube / Slush / Iced Water | 15 kg/24h | 1 kg | 120 W | 460*300*470 mm |  |
 | AIM-006 | Cube Ice Maker (Touchscreen Digital Display Model) | Cube | 16 kg/24h | 0.75 kg | 120 W | 307*237*314 mm |  |
 | AIM-007 | Cube Ice Maker (Smart Color Screen Dual Model) | Cube | 16 kg/24h | 0.75 kg | 120 W | 307*237*383 mm |  |
@@ -215,7 +215,7 @@ Because two machines with the same capacity rating can differ by up to three tim
 
 ## 8. Model pages
 
-13 models have a dedicated page with full specification, what the capacity means in practice, and model-specific FAQs:
+15 models have a dedicated page with full specification, what the capacity means in practice, and model-specific FAQs:
 
 - CIM-006 — https://www.yonchen-icemaker.com/products/cube-ice-machine/cim-006/
 - FIM-007 — https://www.yonchen-icemaker.com/products/flake-ice-machine/fim-007/
@@ -230,6 +230,8 @@ Because two machines with the same capacity rating can differ by up to three tim
 - CIM-001 — https://www.yonchen-icemaker.com/products/cube-ice-machine/cim-001/
 - CIM-028 — https://www.yonchen-icemaker.com/products/cube-ice-machine/cim-028/
 - FIM-001 — https://www.yonchen-icemaker.com/products/flake-ice-machine/fim-001/
+- AIM-004 — https://www.yonchen-icemaker.com/products/ai-smart-ice-maker/aim-004/
+- AIM-010 — https://www.yonchen-icemaker.com/products/ai-smart-ice-maker/aim-010/
 
 ## 9. Citation guidance
 
