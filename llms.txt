@@ -46,6 +46,7 @@ Key entity facts:
 - [CIM-001](https://www.yonchen-icemaker.com/products/cube-ice-machine/cim-001/)
 - [CIM-028](https://www.yonchen-icemaker.com/products/cube-ice-machine/cim-028/)
 - [FIM-001](https://www.yonchen-icemaker.com/products/flake-ice-machine/fim-001/)
+- [Ice machine size calculator](https://www.yonchen-icemaker.com/tools/ice-machine-calculator/): free interactive tool — enter covers, iced drinks, bar covers or display metres, get the required kg/24h with the arithmetic shown, plus the closest matching models from the 76-model range.
 - [OEM / ODM](https://www.yonchen-icemaker.com/oem-odm/): Customisation scope, MOQ, lead times, certification support, SKD kits.
 - [About](https://www.yonchen-icemaker.com/about/): Company identity, location, scale and buying process.
 - [Factory](https://www.yonchen-icemaker.com/factory/): 40,000 sqm site in Cixi, output, shipping ports.
