@@ -248,27 +248,30 @@ gtag('config', 'G-XHFCKDSCD2', { 'anonymize_ip': true, 'send_page_view': true })
     <path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.3-1.3C8.7 21.5 10.3 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.2 15 3.8 13.5 3.8 12 3.8 7.5 7.5 3.8 12 3.8s8.2 3.7 8.2 8.2-3.7 8.2-8.2 8.2z"/>
   </svg>
 </a>
+<script>
+document.getElementById('mobileMenuBtn')?.addEventListener('click',function(){
+  document.getElementById('navLinks').classList.toggle('active');
+});
+window.addEventListener('scroll',function(){
+  document.getElementById('header').classList.toggle('scrolled',window.scrollY>10);
+});
+</script>
 
 <script>
 /* ga4 events */
 (function(){
   function send(n, p){ try{ if (window.gtag) gtag('event', n, p || {}); }catch(e){} }
 
-  var f = document.getElementById('contactForm');
-  if (f) {
-    var btn = f.querySelector('.btn-submit');
-    if (btn) {
-      new MutationObserver(function(){
-        if (btn.textContent.indexOf('Inquiry sent') === 0) {
-          send('generate_lead', {
-            form_id: 'contactForm',
-            ice_type: (f.querySelector('[name=ice_type]')||{}).value || '',
-            market: (f.querySelector('[name=market]')||{}).value || ''
-          });
-        }
-      }).observe(btn, { childList: true, characterData: true, subtree: true });
-    }
-  }
+  document.addEventListener('yc_lead', function(ev){
+    var method = (ev.detail && ev.detail.method) || 'unknown';
+    var ff = document.getElementById('contactForm');
+    send('generate_lead', {
+      form_id: 'contactForm',
+      method: method,
+      ice_type: ff ? ((ff.querySelector('[name=ice_type]')||{}).value || '') : '',
+      market: ff ? ((ff.querySelector('[name=market]')||{}).value || '') : ''
+    });
+  });
 
   document.addEventListener('click', function(e){
     var a = e.target && e.target.closest ? e.target.closest('a') : null;
@@ -295,15 +298,6 @@ gtag('config', 'G-XHFCKDSCD2', { 'anonymize_ip': true, 'send_page_view': true })
     send('page_template', { template: t, page_path: p });
   })();
 })();
-</script>
-
-<script>
-document.getElementById('mobileMenuBtn')?.addEventListener('click',function(){
-  document.getElementById('navLinks').classList.toggle('active');
-});
-window.addEventListener('scroll',function(){
-  document.getElementById('header').classList.toggle('scrolled',window.scrollY>10);
-});
 </script>
 </body>
 </html>

@@ -665,21 +665,16 @@ gtag('config', 'G-XHFCKDSCD2', { 'anonymize_ip': true, 'send_page_view': true })
 (function(){
   function send(n, p){ try{ if (window.gtag) gtag('event', n, p || {}); }catch(e){} }
 
-  var f = document.getElementById('contactForm');
-  if (f) {
-    var btn = f.querySelector('.btn-submit');
-    if (btn) {
-      new MutationObserver(function(){
-        if (btn.textContent.indexOf('Inquiry sent') === 0) {
-          send('generate_lead', {
-            form_id: 'contactForm',
-            ice_type: (f.querySelector('[name=ice_type]')||{}).value || '',
-            market: (f.querySelector('[name=market]')||{}).value || ''
-          });
-        }
-      }).observe(btn, { childList: true, characterData: true, subtree: true });
-    }
-  }
+  document.addEventListener('yc_lead', function(ev){
+    var method = (ev.detail && ev.detail.method) || 'unknown';
+    var ff = document.getElementById('contactForm');
+    send('generate_lead', {
+      form_id: 'contactForm',
+      method: method,
+      ice_type: ff ? ((ff.querySelector('[name=ice_type]')||{}).value || '') : '',
+      market: ff ? ((ff.querySelector('[name=market]')||{}).value || '') : ''
+    });
+  });
 
   document.addEventListener('click', function(e){
     var a = e.target && e.target.closest ? e.target.closest('a') : null;
